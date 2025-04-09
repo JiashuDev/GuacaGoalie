@@ -1,0 +1,1636 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/linear_light_gray_gradient"
+    tools:context=".Rewards">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/profilePhotoImageView"
+        android:layout_width="71dp"
+        android:layout_height="72dp"
+        android:src="@drawable/rewardsavocado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067" />
+
+    <TextView
+        android:id="@+id/usernameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="John Doe"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.376"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068" />
+
+
+    <TextView
+        android:id="@+id/userRoleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GuacaGoalie User"
+        android:textColor="#7a8c86"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.427"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.115" />
+
+
+    <ImageView
+        android:id="@+id/animatedImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:contentDescription="guacamole gif"
+        android:src="@drawable/avocadogif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="800"
+        android:textColor="#133E15"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/animatedImageView"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="398dp"
+        android:layout_height="510dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Your scrollable content goes here -->
+            <TextView
+                android:id="@+id/rewardsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/light_blue_rounded_corner"
+                android:padding="8dp"
+                android:text="Rewards"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/rewardsContainer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/linear_white_rounded_corner"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/reward1texttop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="NOT BOUGHT"
+                    android:textColor="#ff0000"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/reward1"
+                    app:layout_constraintEnd_toEndOf="@id/reward1"
+                    app:layout_constraintStart_toStartOf="@id/reward1" />
+
+
+
+                <ImageButton
+                    android:id="@+id/reward1"
+                    android:layout_width="71dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/reward1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@id/reward1"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@id/reward1"
+                    app:layout_constraintTop_toBottomOf="@id/reward1">
+
+                    <TextView
+                        android:id="@+id/reward1text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="10"
+                        android:textColor="#7a8c86"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/avocado_gif"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="guacamole gif"
+                        android:src="@drawable/avocadogif" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/reward2texttop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="NOT BOUGHT"
+                    android:textColor="#ff0000"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/reward2"
+                    app:layout_constraintEnd_toEndOf="@id/reward2"
+                    app:layout_constraintStart_toStartOf="@id/reward2" />
+
+                <ImageButton
+                    android:id="@+id/reward2"
+                    android:layout_width="71dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/reward2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/reward3"
+                    app:layout_constraintStart_toEndOf="@id/reward1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@id/reward2"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@id/reward2"
+                    app:layout_constraintTop_toBottomOf="@id/reward2">
+
+                    <TextView
+                        android:id="@+id/reward2text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="20"
+                        android:textColor="#7a8c86"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="guacamole gif"
+                        android:src="@drawable/avocadogif" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/reward3texttop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="NOT BOUGHT"
+                    android:textColor="#ff0000"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/reward3"
+                    app:layout_constraintEnd_toEndOf="@id/reward3"
+                    app:layout_constraintStart_toStartOf="@id/reward3" />
+
+                <ImageButton
+                    android:id="@+id/reward3"
+                    android:layout_width="71dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/reward3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/reward4"
+                    app:layout_constraintStart_toEndOf="@id/reward2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@id/reward3"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@id/reward3"
+                    app:layout_constraintTop_toBottomOf="@id/reward3">
+
+                    <TextView
+                        android:id="@+id/reward3text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="50"
+                        android:textColor="#7a8c86"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="guacamole gif"
+                        android:src="@drawable/avocadogif" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/reward4texttop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="NOT BOUGHT"
+                    android:textColor="#ff0000"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/reward4"
+                    app:layout_constraintEnd_toEndOf="@id/reward4"
+                    app:layout_constraintStart_toStartOf="@id/reward4" />
+
+                <ImageButton
+                    android:id="@+id/reward4"
+                    android:layout_width="71dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/reward4"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/reward5"
+                    app:layout_constraintStart_toEndOf="@id/reward3"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@id/reward4"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@id/reward4"
+                    app:layout_constraintTop_toBottomOf="@id/reward4">
+
+                    <TextView
+                        android:id="@+id/reward4text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="100"
+                        android:textColor="#7a8c86"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="guacamole gif"
+                        android:src="@drawable/avocadogif" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/reward5texttop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="NOT BOUGHT"
+                    android:textColor="#ff0000"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/reward5"
+                    app:layout_constraintEnd_toEndOf="@id/reward5"
+                    app:layout_constraintStart_toStartOf="@id/reward5" />
+
+                <ImageButton
+                    android:id="@+id/reward5"
+                    android:layout_width="71dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/reward5"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/reward4"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@id/reward5"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@id/reward5"
+                    app:layout_constraintTop_toBottomOf="@id/reward5">
+
+                    <TextView
+                        android:id="@+id/reward5text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="10"
+                        android:textColor="#7a8c86"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="guacamole gif"
+                        android:src="@drawable/avocadogif" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/rewardsContainer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/linear_white_rounded_corner"
+                android:padding="10dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rewardsButton">
+
+                <TextView
+                    android:id="@+id/reward6texttop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="NOT BOUGHT"
+                    android:textColor="#ff0000"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/reward6"
+                    app:layout_constraintEnd_toEndOf="@id/reward6"
+                    app:layout_constraintStart_toStartOf="@id/reward6" />
+
+                <ImageButton
+                    android:id="@+id/reward6"
+                    android:layout_width="71dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/reward6"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/reward7"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@id/reward6"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@id/reward6"
+                    app:layout_constraintTop_toBottomOf="@id/reward6">
+
+                    <TextView
+                        android:id="@+id/reward6text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="110"
+                        android:textColor="#7a8c86"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="guacamole gif"
+                        android:src="@drawable/avocadogif" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/reward7texttop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="NOT BOUGHT"
+                    android:textColor="#ff0000"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/reward7"
+                    app:layout_constraintEnd_toEndOf="@id/reward7"
+                    app:layout_constraintStart_toStartOf="@id/reward7" />
+
+                <ImageButton
+                    android:id="@+id/reward7"
+                    android:layout_width="71dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/reward7"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/reward8"
+                    app:layout_constraintStart_toEndOf="@id/reward6"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@id/reward7"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@id/reward7"
+                    app:layout_constraintTop_toBottomOf="@id/reward7">
+
+                    <TextView
+                        android:id="@+id/reward7text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="120"
+                        android:textColor="#7a8c86"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="guacamole gif"
+                        android:src="@drawable/avocadogif" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/reward8texttop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="NOT BOUGHT"
+                    android:textColor="#ff0000"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/reward8"
+                    app:layout_constraintEnd_toEndOf="@id/reward8"
+                    app:layout_constraintStart_toStartOf="@id/reward8" />
+
+                <ImageButton
+                    android:id="@+id/reward8"
+                    android:layout_width="71dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/reward8"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/reward9"
+                    app:layout_constraintStart_toEndOf="@id/reward7"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@id/reward8"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@id/reward8"
+                    app:layout_constraintTop_toBottomOf="@id/reward8">
+
+                    <TextView
+                        android:id="@+id/reward8text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="130"
+                        android:textColor="#7a8c86"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="guacamole gif"
+                        android:src="@drawable/avocadogif" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/reward9texttop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="NOT BOUGHT"
+                    android:textColor="#ff0000"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/reward9"
+                    app:layout_constraintEnd_toEndOf="@id/reward9"
+                    app:layout_constraintStart_toStartOf="@id/reward9" />
+
+                <ImageButton
+                    android:id="@+id/reward9"
+                    android:layout_width="71dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/reward9"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/reward10"
+                    app:layout_constraintStart_toEndOf="@id/reward8"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@id/reward9"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@id/reward9"
+                    app:layout_constraintTop_toBottomOf="@id/reward9">
+
+                    <TextView
+                        android:id="@+id/reward9text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="150"
+                        android:textColor="#7a8c86"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="guacamole gif"
+                        android:src="@drawable/avocadogif" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/reward10texttop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="NOT BOUGHT"
+                    android:textColor="#ff0000"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/reward10"
+                    app:layout_constraintEnd_toEndOf="@id/reward10"
+                    app:layout_constraintStart_toStartOf="@id/reward10" />
+
+                <ImageButton
+                    android:id="@+id/reward10"
+                    android:layout_width="71dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/reward10"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/reward9"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@id/reward10"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@id/reward10"
+                    app:layout_constraintTop_toBottomOf="@id/reward10">
+
+                    <TextView
+                        android:id="@+id/reward10text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="100"
+                        android:textColor="#7a8c86"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="guacamole gif"
+                        android:src="@drawable/avocadogif" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/rewardsContainer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/linear_white_rounded_corner"
+                android:padding="10dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rewardsButton">
+
+                <TextView
+                    android:id="@+id/reward11texttop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="NOT BOUGHT"
+                    android:textColor="#ff0000"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/reward11"
+                    app:layout_constraintEnd_toEndOf="@id/reward11"
+                    app:layout_constraintStart_toStartOf="@id/reward11" />
+
+                <!-- Row of "hi" text elements -->
+                <ImageButton
+                    android:id="@+id/reward11"
+                    android:layout_width="71dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/reward11"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/reward12"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@id/reward11"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@id/reward11"
+                    app:layout_constraintTop_toBottomOf="@id/reward11">
+
+                    <TextView
+                        android:id="@+id/reward11text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="200"
+                        android:textColor="#7a8c86"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="guacamole gif"
+                        android:src="@drawable/avocadogif" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/reward12texttop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="NOT BOUGHT"
+                    android:textColor="#ff0000"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/reward12"
+                    app:layout_constraintEnd_toEndOf="@id/reward12"
+                    app:layout_constraintStart_toStartOf="@id/reward12" />
+
+                <ImageButton
+                    android:id="@+id/reward12"
+                    android:layout_width="71dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/reward12"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/reward13"
+                    app:layout_constraintStart_toEndOf="@id/reward11"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@id/reward12"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@id/reward12"
+                    app:layout_constraintTop_toBottomOf="@id/reward12">
+
+                    <TextView
+                        android:id="@+id/reward12text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="220"
+                        android:textColor="#7a8c86"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="guacamole gif"
+                        android:src="@drawable/avocadogif" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/reward13texttop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="NOT BOUGHT"
+                    android:textColor="#ff0000"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/reward13"
+                    app:layout_constraintEnd_toEndOf="@id/reward13"
+                    app:layout_constraintStart_toStartOf="@id/reward13" />
+
+                <ImageButton
+                    android:id="@+id/reward13"
+                    android:layout_width="71dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/reward13"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/reward14"
+                    app:layout_constraintStart_toEndOf="@id/reward12"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@id/reward13"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@id/reward13"
+                    app:layout_constraintTop_toBottomOf="@id/reward13">
+
+                    <TextView
+                        android:id="@+id/reward13text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="240"
+                        android:textColor="#7a8c86"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="guacamole gif"
+                        android:src="@drawable/avocadogif" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/reward14texttop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="NOT BOUGHT"
+                    android:textColor="#ff0000"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/reward14"
+                    app:layout_constraintEnd_toEndOf="@id/reward14"
+                    app:layout_constraintStart_toStartOf="@id/reward14" />
+
+                <ImageButton
+                    android:id="@+id/reward14"
+                    android:layout_width="71dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/reward14"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/reward15"
+                    app:layout_constraintStart_toEndOf="@id/reward13"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@id/reward14"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@id/reward14"
+                    app:layout_constraintTop_toBottomOf="@id/reward14">
+
+                    <TextView
+                        android:id="@+id/reward14text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="260"
+                        android:textColor="#7a8c86"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="guacamole gif"
+                        android:src="@drawable/avocadogif" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/reward15texttop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="NOT BOUGHT"
+                    android:textColor="#ff0000"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/reward15"
+                    app:layout_constraintEnd_toEndOf="@id/reward15"
+                    app:layout_constraintStart_toStartOf="@id/reward15" />
+
+                <ImageButton
+                    android:id="@+id/reward15"
+                    android:layout_width="71dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/reward15"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/reward14"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@id/reward15"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@id/reward15"
+                    app:layout_constraintTop_toBottomOf="@id/reward15">
+
+                    <TextView
+                        android:id="@+id/reward15text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="300"
+                        android:textColor="#7a8c86"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="guacamole gif"
+                        android:src="@drawable/avocadogif" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/rewardsContainer4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/linear_white_rounded_corner"
+                android:padding="10dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rewardsButton">
+
+                <!-- Row of "hi" text elements -->
+                <TextView
+                    android:id="@+id/reward16texttop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="NOT BOUGHT"
+                    android:textColor="#ff0000"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/reward16"
+                    app:layout_constraintEnd_toEndOf="@id/reward16"
+                    app:layout_constraintStart_toStartOf="@id/reward16" />
+
+                <ImageButton
+                    android:id="@+id/reward16"
+                    android:layout_width="71dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/reward16"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/reward17"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@id/reward16"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@id/reward16"
+                    app:layout_constraintTop_toBottomOf="@id/reward16">
+
+                    <TextView
+                        android:id="@+id/reward16text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="350"
+                        android:textColor="#7a8c86"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="guacamole gif"
+                        android:src="@drawable/avocadogif" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/reward17texttop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="NOT BOUGHT"
+                    android:textColor="#ff0000"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/reward17"
+                    app:layout_constraintEnd_toEndOf="@id/reward17"
+                    app:layout_constraintStart_toStartOf="@id/reward17" />
+
+                <ImageButton
+                    android:id="@+id/reward17"
+                    android:layout_width="71dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/reward17"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/reward18"
+                    app:layout_constraintStart_toEndOf="@id/reward16"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@id/reward17"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@id/reward17"
+                    app:layout_constraintTop_toBottomOf="@id/reward17">
+
+                    <TextView
+                        android:id="@+id/reward17text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="350"
+                        android:textColor="#7a8c86"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="guacamole gif"
+                        android:src="@drawable/avocadogif" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/reward18texttop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="NOT BOUGHT"
+                    android:textColor="#ff0000"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/reward18"
+                    app:layout_constraintEnd_toEndOf="@id/reward18"
+                    app:layout_constraintStart_toStartOf="@id/reward18" />
+
+                <ImageButton
+                    android:id="@+id/reward18"
+                    android:layout_width="71dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/reward18"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/reward19"
+                    app:layout_constraintStart_toEndOf="@id/reward17"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@id/reward18"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@id/reward18"
+                    app:layout_constraintTop_toBottomOf="@id/reward18">
+
+                    <TextView
+                        android:id="@+id/reward18text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="400"
+                        android:textColor="#7a8c86"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="guacamole gif"
+                        android:src="@drawable/avocadogif" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/reward19texttop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="NOT BOUGHT"
+                    android:textColor="#ff0000"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/reward19"
+                    app:layout_constraintEnd_toEndOf="@id/reward19"
+                    app:layout_constraintStart_toStartOf="@id/reward19" />
+
+                <ImageButton
+                    android:id="@+id/reward19"
+                    android:layout_width="71dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/reward19"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/reward20"
+                    app:layout_constraintStart_toEndOf="@id/reward18"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@id/reward19"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@id/reward19"
+                    app:layout_constraintTop_toBottomOf="@id/reward19">
+
+                    <TextView
+                        android:id="@+id/reward19text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="500"
+                        android:textColor="#7a8c86"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="guacamole gif"
+                        android:src="@drawable/avocadogif" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/reward20texttop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="NOT BOUGHT"
+                    android:textColor="#ff0000"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/reward20"
+                    app:layout_constraintEnd_toEndOf="@id/reward20"
+                    app:layout_constraintStart_toStartOf="@id/reward20" />
+
+                <ImageButton
+                    android:id="@+id/reward20"
+                    android:layout_width="71dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/reward20"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/reward19"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@id/reward20"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@id/reward20"
+                    app:layout_constraintTop_toBottomOf="@id/reward20">
+
+                    <TextView
+                        android:id="@+id/reward20text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="500"
+                        android:textColor="#7a8c86"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="guacamole gif"
+                        android:src="@drawable/avocadogif" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/rewardsContainer5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/linear_white_rounded_corner"
+                android:padding="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rewardsButton">
+
+                <!-- Row of "hi" text elements -->
+                <TextView
+                    android:id="@+id/reward21texttop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="NOT BOUGHT"
+                    android:textColor="#ff0000"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/reward21"
+                    app:layout_constraintEnd_toEndOf="@id/reward21"
+                    app:layout_constraintStart_toStartOf="@id/reward21" />
+
+                <ImageButton
+                    android:id="@+id/reward21"
+                    android:layout_width="71dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/reward21"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/reward22"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@id/reward21"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@id/reward21"
+                    app:layout_constraintTop_toBottomOf="@id/reward21">
+
+                    <TextView
+                        android:id="@+id/reward21text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="800"
+                        android:textColor="#7a8c86"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="guacamole gif"
+                        android:src="@drawable/avocadogif" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/reward22texttop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="NOT BOUGHT"
+                    android:textColor="#ff0000"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/reward22"
+                    app:layout_constraintEnd_toEndOf="@id/reward22"
+                    app:layout_constraintStart_toStartOf="@id/reward22" />
+
+                <ImageButton
+                    android:id="@+id/reward22"
+                    android:layout_width="71dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/reward22"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/reward23"
+                    app:layout_constraintStart_toEndOf="@id/reward21"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@id/reward22"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@id/reward22"
+                    app:layout_constraintTop_toBottomOf="@id/reward22">
+
+                    <TextView
+                        android:id="@+id/reward22text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="1200"
+                        android:textColor="#7a8c86"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="guacamole gif"
+                        android:src="@drawable/avocadogif" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/reward23texttop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="NOT BOUGHT"
+                    android:textColor="#ff0000"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/reward23"
+                    app:layout_constraintEnd_toEndOf="@id/reward23"
+                    app:layout_constraintStart_toStartOf="@id/reward23" />
+
+                <ImageButton
+                    android:id="@+id/reward23"
+                    android:layout_width="71dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/reward23"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/reward24"
+                    app:layout_constraintStart_toEndOf="@id/reward22"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@id/reward23"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@id/reward23"
+                    app:layout_constraintTop_toBottomOf="@id/reward23">
+
+                    <TextView
+                        android:id="@+id/reward23text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="1800"
+                        android:textColor="#7a8c86"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="guacamole gif"
+                        android:src="@drawable/avocadogif" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/reward24texttop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="NOT BOUGHT"
+                    android:textColor="#ff0000"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/reward24"
+                    app:layout_constraintEnd_toEndOf="@id/reward24"
+                    app:layout_constraintStart_toStartOf="@id/reward24" />
+
+                <ImageButton
+                    android:id="@+id/reward24"
+                    android:layout_width="71dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/reward24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/reward25"
+                    app:layout_constraintStart_toEndOf="@id/reward23"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@id/reward24"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@id/reward24"
+                    app:layout_constraintTop_toBottomOf="@id/reward24">
+
+                    <TextView
+                        android:id="@+id/reward24text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="2000"
+                        android:textColor="#7a8c86"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="guacamole gif"
+                        android:src="@drawable/avocadogif" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/reward25texttop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="NOT BOUGHT"
+                    android:textColor="#ff0000"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/reward25"
+                    app:layout_constraintEnd_toEndOf="@id/reward25"
+                    app:layout_constraintStart_toStartOf="@id/reward25" />
+
+                <ImageButton
+                    android:id="@+id/reward25"
+                    android:layout_width="71dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/reward25"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/reward24"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@id/reward25"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@id/reward25"
+                    app:layout_constraintTop_toBottomOf="@id/reward25">
+
+                    <TextView
+                        android:id="@+id/reward25text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="3000"
+                        android:textColor="#7a8c86"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="guacamole gif"
+                        android:src="@drawable/avocadogif" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/achievementButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="45dp"
+                android:background="@drawable/light_blue_rounded_corner"
+                android:padding="8dp"
+                android:text="Achievements"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.056"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <FrameLayout
+                android:id="@+id/achievementRow1"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/linear_white_rounded_corner"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.056"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.345">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="115dp"
+                        android:layout_weight="1"
+                        android:alpha="1.0"
+                        android:background="@android:color/transparent"
+                        android:padding="10dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/achievement1" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="115dp"
+                        android:layout_weight="1"
+                        android:alpha="0.3"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="Achievement 2"
+                        android:padding="10dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/achievement2" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="115dp"
+                        android:layout_weight="1"
+                        android:alpha="0.3"
+                        android:background="@android:color/transparent"
+                        android:padding="10dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/achievement3" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/achievementRow2"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/linear_white_rounded_corner"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.056"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.605">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="115dp"
+                        android:layout_weight="1"
+                        android:alpha="0.3"
+                        android:background="@android:color/transparent"
+                        android:padding="10dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/achievement4" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="115dp"
+                        android:layout_weight="1"
+                        android:alpha="0.3"
+                        android:background="@android:color/transparent"
+                        android:padding="10dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/achievement5" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="115dp"
+                        android:layout_weight="1"
+                        android:alpha="0.3"
+                        android:background="@android:color/transparent"
+                        android:padding="10dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/achievement6" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/achievementRow3"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/linear_white_rounded_corner"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.056"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.865">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="115dp"
+                        android:layout_weight="1"
+                        android:alpha="0.3"
+                        android:background="@android:color/transparent"
+                        android:padding="10dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/achievement7" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="115dp"
+                        android:layout_weight="1"
+                        android:alpha="1.0"
+                        android:background="@android:color/transparent"
+                        android:padding="10dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/achievementlocked" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="115dp"
+                        android:layout_weight="1"
+                        android:alpha="1.0"
+                        android:background="@android:color/transparent"
+                        android:padding="10dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/achievementlocked" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:itemIconTint="#9C27B0"
+        app:itemTextColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/nav_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
