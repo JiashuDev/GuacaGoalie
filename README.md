@@ -4,7 +4,7 @@
 
 ---
 ### The Idea
-<img src="images/poster.png" alt="Milestone Tracker" width="800"/>
+<img src="images/poster.png" alt="Milestone Tracker" width="500"/>
 
 # 🥑 GuacaGoalie – Your Daily Fitness Companion
 
@@ -45,17 +45,17 @@
 ## 🖼️ Screenshots
 
 ### 🥾 Milestones Tracker
-<img src="images/mainpage.png" alt="Milestone Tracker" width="500"/>
+<img src="images/mainpage.png" alt="Milestone Tracker" width="300"/>
 
 ### 🗺️ Milestone Map
-<img src="images/map.png" alt="Milestone Map" width="500"/>
+<img src="images/map.png" alt="Milestone Map" width="300"/>
 
 
 ### 🛒 Guaca Store
-<img src="images/shop.png" alt="In-App Store" width="500"/>
+<img src="images/shop.png" alt="In-App Store" width="300"/>
 
 ### 🏆 Achievements Unlocked
-<img src="images/bage.png" alt="In-App Store" width="500"/>
+<img src="images/bage.png" alt="In-App Store" width="300"/>
 
 
 
